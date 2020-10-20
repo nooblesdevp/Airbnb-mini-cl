@@ -1,8 +1,9 @@
 .search {
   position: absolute;
   top: 35px;
-  left: 25%;
+  left: 29%;
   width: 100vw;
+  z-index: 1;
 }
 
 .search > h2 {
@@ -25,10 +26,9 @@
   height: 30px;
   top: 400px;
   border: none;
-}
-
-.search > input:focus {
-  outline-width: 0;
+  &:focus {
+    outline-width: 0;
+  }
 }
 
 .search > button {
@@ -39,9 +39,9 @@
   background-color: #ff7779;
   color: white;
   width: 579px;
-}
-
-.search > button:hover {
-  background-color: white;
-  color: #ff7779;
+  &:hover {
+    background-color: white;
+    color: #ff7779;
+    border: 1px solid #ff7779;
+  }
 }
